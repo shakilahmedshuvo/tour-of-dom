@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=q">
+    <title>Tour Of Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        li {
+            color: tomato;
+        }
+
+        #fruits-title {
+            color: black;
+        }
+
+        .important-places {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum deserunt placeat deleniti mollitia asperiores
+            harum rem nam neque labore rerum voluptatem, modi, illo aliquid distinctio totam inventore, vitae odit
+            quisquam.</p>
+    </header>
+    <main id="main-container">
+        <section>
+            <h1>My Awsome DOM de baba</h1>
+            <ul>
+                <li>Jalali Set</li>
+                <li>Shafayet</li>
+                <li>Bonobash</li>
+                <li>Dom de de baba</li>
+            </ul>
+        </section>
+        <!-- another section -->
+        <section>
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Bannana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <!--------- another section ------>
+        <section id="places-container" class="large-text">
+            <h1>Places I like to visit</h1>
+            <ul id="places-tile">
+                <li class="important-places">soonderban</li>
+                <li class="important-places">bandorban</li>
+                <li class="important-places">kataban</li>
+                <li>shalban</li>
+            </ul>
+        </section>
+    </main>
+    <!------------------ javascript file ------------->
+    <script src="JS/dom.js"></script>
+    <script src="JS/stylein.js"></script>
+    <script src="JS/append.js"></script>
+    <script>
+        // const student = {
+        //     name: "ABUL",
+        //     id: 11,
+        //     study: function (time) {
+        //         console.log(time, "He is doing study");
+        //     },
+        // }
+        // console.log("Adding JS inside the html file");
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for (const li of liCollection) {
+            // console.log(li.innerText);
+        };
+        const allHeadings = document.getElementsByTagName("h1");
+        for (const h1 of allHeadings) {
+            // console.log(h1.innerText);
+        }
+    </script>
+</body>
+
+</html>
